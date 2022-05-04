@@ -20,20 +20,26 @@
 
     <section class="preview">
 
-
+     
 
     </section>
 
   </body>
   <script>
-    const cat = {
-      name : 'Bertie',
-      breed : 'Cymric',
-      color : 'white',
-      greeting: function() {
-        console.log('Meow!');
-      }
-    }
+   
+   function Cat(name, breed, color){
+     this.name = name;
+     this.breed = breed;
+     this.color = color;
+     this.greeting = ()=> {
+      console.log(`Hello said ${name} the ${breed}`);
+     }
+   }
+
+   let cat2 = new Cat("Kitty", "Bombay", "black");
+
+   console.log(cat2.name);
+   console.log(cat2.greeting());
   </script>
 
 </html>
